@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="">
+      <input
+        type="text"
+        maxlength="20"
+        name="nome-utente"
+        placeholder="Inserisci il tuo nome..."
+      />
+      <hr />
+      <input
+        type="password"
+        maxlength="20"
+        name="password"
+        placeholder="Inserisci la tua password..."
+      />
+
+      <hr />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Inserisci la tua email..."
+        required
+      />
+
+      <hr />
+
+      <input type="search" name="ricerca" placeholder="Cerca..." />
+
+      <hr />
+
+      <input
+        type="number"
+        name="eta"
+        placeholder="Inserisci la tua età..."
+        min="0"
+        max="120"
+      />
+
+      <hr />
+
+      <input
+      type="range"
+      name="range"
+      min="0"
+      max="100"
+       />
+
+       <hr />
+
+       <input type="time" />
+       <input type="date" />
+       <input type="datetime-local" />
+
+      <!-- <input
+        name="nome-utente"
+        placeholder="Inserisci il tuo nome..."
+        value="Ciccio"
+        required
+        disabled
+      /> -->
+
+      <!--         <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+    
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required />
+    
+        <label for="eta">Età:</label>
+        <input type="number" id="eta" name="eta" min="0" max="120" required />
+    
+        <button type="submit">Invia</button> -->
+    </form>
+
+    <!-- table = contenitore della tabella -->
+    <table hidden>
+      <!-- head = intestazione della tabella -->
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cognome</th>
+          <th>Età</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Mario</td>
+          <td>Rossi</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Luigi</td>
+          <td>Bianchi</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Luigi</td>
+          <td>Bianchi</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">Totale</td>
+          <td>55</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
