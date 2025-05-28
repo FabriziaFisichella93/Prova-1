@@ -6,7 +6,51 @@
     <title>Document</title>
   </head>
   <body>
-    <form onsubmit="">
+    <form onsubmit="" enctype="multipart/form-data">
+
+      <button aria-label="Chiudi finestra">X</button>
+
+      <p title="Ciccio non è bello">Ciccio</p>
+
+      <div>
+        <textarea
+          name="testo"
+          placeholder="Inserisci il tuo testo..."
+          rows="3"
+          cols="30"
+          maxlength="25"
+          spellcheck="true"
+        ></textarea>
+      </div>
+
+      <hr />
+
+      <label for="select">Scegli un'opzione:</label>
+      <select name="select" id="select" >
+        <option value="opzione1">Opzione 1</option>
+        <option value="opzione2" disabled>Opzione 2</option>
+        <option value="opzione3">Opzione 3</option>
+      </select>
+
+      <hr />
+
+      <!-- genera un bottone generico che attiva funzioni esterne al form -->
+      <input type="button" value="Registrati al sito" onclick="" />
+      <button onclick="">Torna indietro</button>
+
+      <!-- genera un bottone che attiva l'onsubmit del form -->
+      <input type="submit" value="Registrati al sito" />
+      <button type="submit">Torna indietro</button>
+
+      <!-- svuota tutti i campi del form in automatico -->
+      <input type="reset" value="Cancella tutto" />
+      <button type="reset">Cancella tutto</button>
+      <hr />
+
+      <input type="file" name="file" accept=".jpg, .jpeg, .png" multiple />
+
+      <hr />
+
       <input
         type="text"
         maxlength="20"
@@ -26,7 +70,7 @@
       <input
         type="email"
         name="email"
-        placeholder="Inserisci la tua email..."
+        placeholder="john.doe@email.com"
         required
       />
 
@@ -46,18 +90,66 @@
 
       <hr />
 
-      <input
-      type="range"
-      name="range"
-      min="0"
-      max="100"
-       />
+      <input type="range" name="range" min="0" max="100" />
 
-       <hr />
+      <hr />
 
-       <input type="time" />
-       <input type="date" />
-       <input type="datetime-local" />
+      <p>
+        Ciao, sono un <span>paragrafo di testo</span> che spiega come utilizzare
+        i campi
+      </p>
+
+      <input type="time" />
+      <input type="date" />
+      <input type="datetime-local" />
+
+      <hr />
+
+      <h4>Scegli il tuo colore:</h4>
+      <div>
+        <label>
+          <input type="checkbox" name="valore1" />
+          Accetto i termini e le condizioni
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="valore1" />
+          Ciao
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="valore1" />
+          Pippo
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <input type="radio" name="colore" value="rosso" />
+          Rosso
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" name="colore" value="verde" />
+          Verde
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" name="colore" value="blu" />
+          Blu
+        </label>
+      </div>
+
+      <label for="select-colore">Scegli il tuo colore:</label>
+      <input type="color" id="select-colore" name="colore" value="#ff0000" />
+
+      <input type="url" name="sito-web" placeholder="https://www.example.com" />
 
       <!-- <input
         name="nome-utente"
