@@ -1,0 +1,57 @@
+/* -- STILIZZAZIONE GENERALE -- */
+body {
+  background-color: #fcb5b5;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-color: yellow;
+}
+
+p {
+    color: #000;
+}
+
+.disney {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#minnie {
+    color: red;
+}
+
+div, p {
+    border: 1px solid #fff;
+}
+
+div {
+    background-color: orange;
+}
+
+p {
+    background-color: rgba(255, 0, 0, 0.368);
+    font-size: 16px;
+
+}
+
+.casuale {
+    width: 50%;
+    height: 40px;
+    overflow: auto;
+}
+
+.immagine-di-background {
+    background-image: url('assets/immagineBella.jpeg');
+    background-color: salmon;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+
+
+/* -- BOTTONI -- */

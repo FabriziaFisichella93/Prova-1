@@ -7,10 +7,10 @@
   </head>
   <body>
     <form onsubmit="" enctype="multipart/form-data">
-
       <button aria-label="Chiudi finestra">X</button>
+      <button aria-hidden="true" tabindex="1">X</button>
 
-      <p title="Ciccio non è bello">Ciccio</p>
+      <p title="Ciccio non è bello" translate="no">Ciccio</p>
 
       <div>
         <textarea
@@ -26,10 +26,10 @@
       <hr />
 
       <label for="select">Scegli un'opzione:</label>
-      <select name="select" id="select" >
+      <select name="select" id="select">
         <option value="opzione1">Opzione 1</option>
         <option value="opzione2" disabled>Opzione 2</option>
-        <option value="opzione3">Opzione 3</option>
+        <option value="opzione3" selected>Opzione 3</option>
       </select>
 
       <hr />

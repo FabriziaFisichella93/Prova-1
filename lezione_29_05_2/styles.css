@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    background-color: lightblue;
+    height: 200px;
+}
+
+.box1:hover, .box3:hover {
+    background-color: #c79999;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.highlight:hover {
+    background-color: yellow;
+}
+
+.box2 {
+    position: absolute;
+    background-color: #fff;
+    top: 50px;
+    left: 200px;
+}
+
+.sonospeciale {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    background-color: #fff;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    background-color: yellow;
+}
+
+/* p {
+    padding: 20px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px;
+    color: white;
+}
+
+.prova {
+    background-color: #281087;
+    margin: 0;
+    padding: 10px;
+}
+
+.number {
+    display: none;
+    margin: 0;
+    border-style: solid;
+    border-color: #5d685d;
+    border-width: 3px;
+
+} */
